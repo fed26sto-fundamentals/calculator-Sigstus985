@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    font-family: "Chakra Petch", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFCFF;
+    margin: 0;
+}
+
+#calculator{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 3px;
+    width: 20rem;
+    aspect-ratio: 2/3;
+    background-color: #443742;
+    border: solid 4px #443742;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+h1{
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: end;
+    font-size: 80px;
+    font-weight: 300;
+    margin: 0;
+    width: 100%;
+    border-radius: 5px;
+}
+
+button{
+    background-color: #C3B299;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: xx-large;
+    font-weight: 200;
+}
+
+.operator{
+    background-color: #CBD4C2;
+}
+
+#addition{
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+#subtraction{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+#multiplication{
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+#division{
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+
+#clear{
+    grid-column-start: 3;
+    grid-row-start: 6;
+}
+
+#equal{
+    background-color: #247BA0;
+    grid-column-start: 4;
+    grid-row-start: 3;
+    grid-row-end: 7;
+}
+
+.coloredButton {
+    background-color: #247BA0;
+}
